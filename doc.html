@@ -117,14 +117,50 @@
                     <div class = "service-content">
                         <h2><i class = "fas fa-arrow-alt-circle-right"></i> Security</h2>
                         <p>Take our questionaire below to see if you're eligable for the ERC grant.</p>
-                        <button type = "button" class = "btn">Know More</button>
+                        <button type = "button" class = "btn">Know More</button> 
                     </div>
                 </article>
                 <!-- end of single service -->
             </div>
         </section>
+        
+        <!-- button where it sends to email-->
+        <div class="book">
+            <form class="book-form" action="http://formspree.io/your@email.com" method="post">
+              <div class="form-item">
+                <label for="question1">Question 1: </label>
+                <input type="text" id="question1" name="question1">
+              </div>
+              <div class="form-item">
+                <label for="question2">Question 2: </label>
+                <input type="text" id="question2" name="question2">
+              </div>
+              <div class="form-item">
+                <label for="question3">Question 3: </label>
+                <input type="text" id="question3" name="question3">
+              </div>
+              <div class="form-item">
+                <label for="question4">Question 4: </label>
+                <input type="text" id="question4" name="question4">
+              </div>
+              <div class="form-item">
+                <label for="question5">Question 5: </label>
+                <input type="text" id="question5" name="question5">
+              </div>
+              <div class="form-item">
+                <input type="button" class="btn" value="Submit" onclick="submitForm()">
+              </div>
+            </form>
+          </div>
+          
+          <script>
+            function submitForm() {
+              var form = document.querySelector('.book-form');
+              form.submit();
+            }
+          </script>
 
-      <!----> <div class = "book">
+      <!-- <div class = "book">
             <form class = "book-form">
                 <div class = "form-item">
                     <label for = "question1">Question 1: </label>
@@ -150,7 +186,7 @@
                     <input type = "submit" class = "btn" value = "submit">
                 </div>
             </form>
-        </div>
+        </div> -->
 
         <section class = "Whoweare sec-width" id = "Whoweare">
             <div class = "title">
@@ -209,7 +245,7 @@
                     </div>
                 </article>
                
-                <article class = "Whoweare">
+            <!-- <article class = "Whoweare">
                     <div class = "Whoweare-image">
                         <img src = "images/img3.jpg" alt = "Whoweare image">
                     </div>
@@ -240,7 +276,7 @@
                     </div>
                 </article>
 
-           <!--      <article class = "Whoweare">
+                 <article class = "Whoweare">
                     <div class = "Whoweare-image">
                         <video width="500" height="262" controls> alt = "Whoweare image">
                             <source src=”https://vimeo.com/736302036" type=video/ogg>
@@ -256,7 +292,8 @@
                             </li>
                             <li>
                             -->
-                        </ul>
+
+                      <!--  </ul>
                         <article class="Whoweare">
                             <div class="Whoweare-image">
                                 <video width="500" height="262" controls>
@@ -272,7 +309,65 @@
                             </div>
                         </article>
             </div>
-        </section>
+        </section> -->
+        <article class = "Whoweare">
+            <div class = "Whoweare-image">
+                <img src = "images/img3.jpg" alt = "Whoweare image">
+            </div>
+            <div class = "Whoweare-text">
+
+                <ul>
+                    <p>Dedicated specialists that will interpret highly complex program rules and will be available to answer your questions, including:</p>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        How does the PPP loan factor into the ERC?
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        What are the differences between the 2020 and 2021 programs and how does it apply to your business?
+
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        What are aggregation rules for larger, multi-state employers, and how do I interpret multiple states’ executive orders?
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        How do part-time, Union, and tipped employees affect the amount of my refunds?
+                    </li>
+                </ul>
+
+
+            </div>
+        </article>
+
+   <!--      <article class = "Whoweare">
+            <div class = "Whoweare-image">
+                <video width="500" height="262" controls> alt = "Whoweare image">
+                    <source src=”https://vimeo.com/736302036" type=video/ogg>
+                    <source src="https://vimeo.com/736302036" type=video/mp4>
+                  </video>
+            </div>
+            <div class = "Whoweare-text">
+                <ul>
+                    <p>Watch our video above to understand more about the ERC program and how we can help your business.</p>
+                    <li>
+                    </li>
+                    <li>
+                    -->
+                </ul>
+                <article class="Whoweare">
+                    <div class="Whoweare-image">
+                      <iframe src="https://player.vimeo.com/video/816163607?h=f537f5ad22" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<!--<p><a href="https://vimeo.com/816163607">Employee Retention Credit Program</a> from <a href="https://vimeo.com/bottomlineconcepts">Bottom Line Concepts</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+                        <p>Watch our video above to understand more about the ERC program and how we can help your business.</p>
+                    </div>
+                    <div class="Whoweare-text">
+
+                    </div>
+                </article>
+    </div>
+</section>
 
 
         <section class = "customers" id = "customers">

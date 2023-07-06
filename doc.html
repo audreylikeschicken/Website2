@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Business Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>The Employee Retention Credit</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>We Specialize in Maximizing ERC for Small Businesses</h2>
+                <p>Receive up to $26,000 per Employee</p>
+                <button type = "button" class = "head-btn">CONTACT US</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#Whoweare">Who We Are</a></li>
+                <li><a href = "#customers">Customers</a></li>
+            </ul>
+            
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-card"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2><i class = "fas fa-arrow-alt-circle-right"></i> What is the Employee Retention Credit (ERC)?</h2>
+                        <p>ERC is a stimulus program designed to help those businesses that were able to retain their employees during the Covid-19 pandemic. Established by the CARES Act, it is a refundable tax credit – a  grant, not a loan – that you can claim for your business. The ERC is  available to both small and mid-sized businesses. It is based on  qualified wages and healthcare paid to employees.</p>
+                        <p>• Up to $26,ooo per employee</p>
+                        <p>• Available for 2020 and the first 3 quarters of 2021</p>
+                        <p>• Qualify with decreased revenue or COVID event</p>
+                        <p>• No limit on funding</p>
+                        <p>• ERC is a refundable tax credit</p>
+                        
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-money"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2><i class = "fas fa-arrow-alt-circle-right"></i> How much money can you get back?</h2>
+                        <p>You can claim up to $5,000 per employee for 2020. For 2021, the credit can be up to $7,000 per employee per quarter.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-card"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2><i class = "fas fa-arrow-alt-circle-right"></i> How do you know if your business is eligible?</h2>
+                        <p>To qualify, your business must have been negatively impacted in either of  the following ways:</p>
+                        <p>• A government authority  required partial or full shutdown of your business during 2020 or 2021.  This includes your operations being limited by commerce, inability to  travel or restrictions of group meetings.</p>
+                        <p>• Gross receipt reduction  criteria is different for 2020 and 2021, but is measured against the  current quarter as compared to 2019 pre-COVID amounts.</p>
+                        <p>• A business can be eligible for one quarter and not another. </p>
+                        <p>• Initially, under the CARES  Act of 2020, businesses were not able to qualify for the ERC if they had already received a Paycheck Protection Program (PPP) loan. With new  legislation in 2021, employers are now eligible for both programs. The  ERC, though, cannot apply to the same wages as the ones for PPP. </p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-card"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2><i class = "fas fa-arrow-alt-circle-right"></i> Security</h2>
+                        <p>Take our questionaire below to see if you're eligable for the ERC grant.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+      <!----> <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "question1">Question 1: </label>
+                    <input type = "question" id = "question">
+                </div>
+                <div class = "form-item">
+                    <label for = "question2">Question 2: </label>
+                    <input type = "question" id = "question">
+                </div>
+                <div class = "form-item">
+                    <label for = "question3">Question 3: </label>
+                    <input type = "question" id = "question">
+                </div>
+                <div class = "form-item">
+                    <label for = "question4">Question 4: </label>
+                    <input type = "question" id = "question">
+                </div>
+                <div class = "form-item">
+                    <label for = "question5">Question 5: </label>
+                    <input type = "question" id = "question">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "submit">
+                </div>
+            </form>
+        </div>
+
+        <section class = "Whoweare sec-width" id = "Whoweare">
+            <div class = "title">
+                <h2>Who We Are</h2>
+            </div>
+            <div class = "Whoweare-container">
+                
+                <article class = "Whoweare">
+                    <div class = "Whoweare-image">
+                        <img src = "images/img1.jpg" alt = "Whoweare image">
+                    </div>
+                    <div class = "Whoweare-text">
+                        <h3>Why Us</h3>
+                        
+                        </ul>
+                        <p>The ERC underwent several changes and has many technical details,  including how to determine qualified wages, which employees are eligible, and more. Your business’ specific case might require  more  intensive review and analysis. The program is complex and might leave  you with many unanswered questions.</p>
+                        <p>We can help make sense of it all. Our dedicated experts will  guide you and outline the steps you need to take so you can maximize the  claim for your business.</p>
+                        <p class = "rate">
+                        
+                        </p>
+                        <button type = "button" class = "btn">Get Qualified Now</button>
+                    </div>
+                </article>
+            
+                <article class = "Whoweare">
+                    <div class = "Whoweare-image">
+                        <img src = "images/img2.jpg" alt = "Whoweare image">
+                    </div>
+                    <div class = "Whoweare-text">
+                        <h3>Our Services Include</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Thorough evaluation regarding your eligibility 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comprehensive analysis of your claim 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Guidance on the claiming process and documentation 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Specific program expertise that a regular CPA or payroll processor might not be well-versed in 
+                            </li>
+                        <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fast and smooth end-to-end process, from eligibility to claiming and receiving refunds
+                        </li>
+                    
+            
+                        </p>
+                        
+                    </div>
+                </article>
+               
+                <article class = "Whoweare">
+                    <div class = "Whoweare-image">
+                        <img src = "images/img3.jpg" alt = "Whoweare image">
+                    </div>
+                    <div class = "Whoweare-text">
+                        
+                        <ul>
+                            <p>Dedicated specialists that will interpret highly complex program rules and will be available to answer your questions, including:</p>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                How does the PPP loan factor into the ERC? 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                What are the differences between the 2020 and 2021 programs and how does it apply to your business?
+
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                What are aggregation rules for larger, multi-state employers, and how do I interpret multiple states’ executive orders?
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                How do part-time, Union, and tipped employees affect the amount of my refunds?
+                            </li>
+                        </ul>
+                    
+                
+                    </div>
+                </article>
+
+           <!--      <article class = "Whoweare">
+                    <div class = "Whoweare-image">
+                        <video width="500" height="262" controls> alt = "Whoweare image">
+                            <source src=”https://vimeo.com/736302036" type=video/ogg>
+                            <source src="https://vimeo.com/736302036" type=video/mp4>
+                          </video> 
+                    </div>
+                    <div class = "Whoweare-text">
+                        
+                        <ul>
+                            <p>Watch our video above to understand more about the ERC program and how we can help your business.</p>
+                            <li>
+                               
+                            </li>
+                            <li>
+                            -->
+                        </ul>
+                        <article class="Whoweare">
+                            <div class="Whoweare-image">
+                                <video width="500" height="262" controls>
+                                    <source src="https://vimeo.com/736302036" type="video/ogg">
+                                    <p>Watch our video above to understand more about the ERC program and how we can help your business.</p>
+                                    <source src="https://vimeo.com/736302036" type="video/mp4">
+                                    
+                                </video>
+                                <p>Watch our video above to understand more about the ERC program and how we can help your business.</p>
+                            </div>
+                            <div class="Whoweare-text">
+                                
+                            </div>
+                        </article>
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Awesome</h3>
+                        <p>Filler Review</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Customer Name</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Great</h3>
+                        <p>Filler Review</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Love it</h3>
+                        <p>Filler Review</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Customer Name</span>
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Great</h3>
+                        <p>Filler Review</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+      
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Website</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Who We Are</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Brooklyn, NY
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +347-798-7469
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            website@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>

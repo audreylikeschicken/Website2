@@ -187,6 +187,7 @@ img{
     border-bottom: 5px solid var(--dark);
     width: 235px;
     margin: 15px 0;
+    padding-left: 20px;
 }
 
 .sec-width{

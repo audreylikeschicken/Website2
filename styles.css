@@ -187,17 +187,22 @@ img{
     border-bottom: 5px solid var(--dark);
     width: 235px;
     margin: 15px 0;
-    padding-left: 20px;
+    padding-left: 10px;
+}
+
+#twosix{
+  font-size:32px;
+  color:rgb(255,255,255);
 }
 
 .sec-width{
-    width: 100vw;
+    width: auto;
     margin: 0 auto!important;
 }
 
 /* service */
 .services{
-    margin: 40px 0;
+    margin:40px 0;
 }
 .service{
     display: flex;
@@ -224,7 +229,7 @@ img{
 @media(min-width: 992px){
     .services-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
     }
     .title h2{

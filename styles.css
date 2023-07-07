@@ -307,6 +307,7 @@ img{
 .Whoweare{
     margin: 40px 0;
 }
+
 .Whoweare{
     margin: 45px 0;
     padding-bottom: 25px;
@@ -383,7 +384,7 @@ img{
 /* customers */
 
 .customers{
-    margin-top: 40px;
+    margin-top: 0px;
     padding: 40px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
 }

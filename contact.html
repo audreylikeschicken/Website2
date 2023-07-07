@@ -1,14 +1,61 @@
 <!DOCTYPE html>
-<body>
-  <h2>Fill out this form to send us an email!</h2>
-  <form action="mailto:eyongsyep@gmail.com" method="post" enctype="text/plain">
-    Name:<br>
-    <input type="text" name="Client"><br>
-    Company:<br>
-    <input type="text" name="Company"><br>
-    Comment:<br>
-    <input type="text" name="Message" size="50"><br><br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
+<html lang="en">
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel = "icon" href = "images/logo.png" type = "image/png">
+</head>
+
+<body id = "bg2">
+
+  <header id = "topbar">
+    <div class="wrapper">
+      <div class="one">Send us an Email:</div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five">
+        <a href = "doc.html">Back to Homepage</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <p><br><br><br><br></p>
+  </section>
+
+
+  <section class = "form">
+
+
+    <form action="mailto:eyongsyep@gmail.com" method="post" enctype="text/plain">
+
+      <div class = "labels">
+        Name:<br>
+        <input class="tbox" type="text" name="Client"><br><br>
+      </div>
+
+      <div class = "labels">
+        Company:<br>
+        <input class="tbox" type="text" name="Company"><br><br>
+      </div>
+
+      <div class = "labels">
+        Comment:<br>
+        <textarea id ="comment" class="tbox" type="text" name="Message"></textarea><br><br><br><br><br><br><br>
+      </div>
+
+      <div>
+        <input id = "submit" type="submit" value="SEND EMAIL">
+      </div>
+
     </form>
-  </body>
+
+
+  </section>
+
+</body>
+
+</html>

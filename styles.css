@@ -521,3 +521,63 @@ img{
     left: 0;
     z-index: 5;
 }
+
+/* CONTACT PAGE */
+#bg2{
+  background-image:url(./images/contactbg.jpg);
+  background-size:cover;
+}
+
+#topbar{
+  background-color:rgb(255,255,255,0.7);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  padding:10px;
+}
+
+.wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
+}
+
+.form{
+  background-color:rgb(105,105,105,0.6);
+  margin-left:700px;
+  margin-right:700px;
+  margin-bottom:100px;
+  padding:10px;
+}
+
+.labels{
+  font-size:18px;
+  color:white;
+}
+
+#comment{
+  height:150px;
+  width:500px;
+  resize:none;
+}
+
+.tbox {
+  font-size:18px;
+  padding-left:2px;
+  padding right:2px;
+}
+
+#submit{
+  background-color:rgb(0,0,0,.5);
+  border:none;
+  color:white;
+  padding:3px;;
+  margin:10px;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:24px;
+  width:480px;
+}

@@ -389,7 +389,7 @@ img{
 
 /* customers */
 
-/* .customers{
+ .customers{
     margin-top: 0px;
     padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
@@ -465,7 +465,7 @@ img{
         width: 100px;
         height: 100px;
     }
-} /*
+}
 
 /* footer */
 .footer{
@@ -549,8 +549,8 @@ img{
   background-size:cover;
   font-size: 12px;
   text-decoration: none;
-color: black; 
-  
+color: black;
+
 }
 
 #topbar{

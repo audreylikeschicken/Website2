@@ -40,3 +40,22 @@ for(i = 0; i < acc.length; i++) {
         }
 });
 }
+
+//timer stuff
+var targetDate = new Date("April 15,2024 00:00:00").getTime();
+var n = setInterval(function() {
+  var currTime = new Date().getTime();
+  var dist = targetDate - currTime;
+
+  var days = Math.floor(dist / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((dist % (1000 * 60)) / 1000);
+
+  document.getElementById('countdown').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (dist < 0) {
+    clearInterval(n);
+    document.getElementById('countdown').innerHTML = "Sorry, this Program has Expired";
+  }
+}, 1000);

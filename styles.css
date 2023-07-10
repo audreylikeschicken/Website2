@@ -618,3 +618,7 @@ img{
     color: #444;
     font-weight:bold;
   }
+
+  .site-name {
+    font-size:18px;
+  }

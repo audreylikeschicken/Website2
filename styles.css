@@ -391,7 +391,7 @@ img{
 
 .customers{
     margin-top: 0px;
-    padding: 40px;
+    padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
 }
 .customer{
@@ -402,7 +402,7 @@ img{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
     cursor: pointer;
     transition: var(--transition);
-    height:400px;
+    height:500px;
 }
 .rating{
     margin: 10px 0;

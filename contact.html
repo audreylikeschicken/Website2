@@ -12,7 +12,19 @@
 
   <header id = "topbar">
     <div class="wrapper">
-      <div class="one">Send us an Email:</div>
+      <style>
+        .one {
+            animation: moveUpDown 3s ease-in-out infinite alternate;
+        }
+    
+        @keyframes moveUpDown {
+            0% { transform: translateY(-20px); }
+            100% { transform: translateY(20px); }
+        }
+    </style>
+    
+    <div class="one">Send us an Email:</div>
+    
       <div class="two"></div>
       <div class="three"></div>
       <div class="four"></div>
@@ -49,7 +61,7 @@
       </div>
 
       <div>
-        <input id = "submit" type="submit" value="SEND EMAIL">
+        <input id = "submit" type="submit" value="SEND">
       </div>
 
     </form>

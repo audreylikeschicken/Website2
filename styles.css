@@ -427,11 +427,9 @@ img{
     font-weight: 700;
     opacity: 0.7;
 }
-/*
 .customer:hover{
     transform: translateY(-18px);
 }
-*/
 @media(min-width: 992px){
     .customers-container{
         display: grid;
@@ -535,10 +533,14 @@ img{
 #bg2{
   background-image:url(./images/contactbg.jpg);
   background-size:cover;
+  font-size: 12px;
+  text-decoration: none;
+color: black; 
+  
 }
 
 #topbar{
-  background-color:rgb(255,255,255,0.7);
+  background-color:rgba(255, 255, 255, 0.7);
 }
 
 .wrapper {
@@ -551,14 +553,15 @@ img{
 .wrapper > div {
   text-align: center;
   padding: 20px 0;
-  font-size: 32px;
+  font-size: 23px;
 }
 
 .form{
-  background-color:rgb(105,105,105,0.6);
-  margin-left:700px;
-  margin-right:700px;
-  margin-bottom:100px;
+  background-color:rgba(105, 105, 105, 0.6);
+  margin-top: -60px;
+  margin-left:60px;
+  margin-right:60px;
+  margin-bottom:40px;
   padding:10px;
 }
 
@@ -574,12 +577,13 @@ img{
 }
 
 .tbox {
-  font-size:18px;
+  font-size:12px;
   padding-left:2px;
-  padding right:2px;
+  padding-right:2px;
 }
 
 #submit{
+  margin-top: 25px;
   background-color:rgb(0,0,0,.5);
   border:none;
   color:white;

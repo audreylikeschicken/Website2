@@ -395,14 +395,28 @@ img{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
 }
 .customer{
-    background: #fff;
+    background: rgb(255,255,255,0.8);
+    border-style:none;
     padding: 35px;
-    text-align: center;
+    text-align: left;
     margin: 24px 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    transition: var(--transition);
     height:500px;
+    font-size:18px;
+}
+.customer form input[type="radio"]:hover {
+  cursor:pointer;
+}
+.customer form input[type="submit"] {
+  background-color:rgb(200,200,200);
+  text-align:center;
+  height:50px;
+  width:150px;
+  border-radius:10px;
+}
+.customer form input[type="submit"]:hover {
+  background-color:rgb(200,200,200,0.3);
+  cursor:pointer;
 }
 .rating{
     margin: 10px 0;

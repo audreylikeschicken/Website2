@@ -59,3 +59,7 @@ var n = setInterval(function() {
     document.getElementById('countdown').innerHTML = "Sorry, this Program has Expired";
   }
 }, 1000);
+
+function closeWindow() {
+  close();
+}

@@ -600,8 +600,9 @@ img{
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size:24px;
   }
-  
+
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #ccc;
@@ -609,8 +610,11 @@ img{
 
     .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #ccc;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    font-size:20px;
+    color: #444;
+    font-weight:bold;
   }

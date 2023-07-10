@@ -49,7 +49,6 @@ var n = setInterval(function() {
 
   var days = Math.floor(dist / (1000 * 60 * 60 * 24));
   var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
 
   document.getElementById('countdown').innerHTML = days + "d " + hours + "h ";
 

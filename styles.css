@@ -407,14 +407,14 @@ img{
 .customer form input[type="radio"]:hover {
   cursor:pointer;
 }
-.customer form input[type="submit"] {
+#sub_bu {
   background-color:rgb(200,200,200);
   text-align:center;
   height:50px;
   width:150px;
   border-radius:10px;
 }
-.customer form input[type="submit"]:hover {
+#sub_bu:hover {
   background-color:rgb(200,200,200,0.3);
   cursor:pointer;
 }
@@ -428,7 +428,6 @@ img{
 .customer p{
     opacity: 0.7;
     line-height: 1.8;
-    width: 60%;
     margin: 0 auto;
 }
 .customer img{

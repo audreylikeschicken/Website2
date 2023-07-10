@@ -59,6 +59,7 @@ var n = setInterval(function() {
   }
 }, 1000);
 
+//close window
 function closeWindow() {
   close();
 }

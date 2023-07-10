@@ -25,7 +25,7 @@
             <div class="head-bottom flex">
                 <h2>We Specialize in Maximizing ERC for Small Businesses</h2>
                 <p id = "twosix"><em><b><ins>Receive up to $26,000 per Employee</ins></b></em></p>
-                <form action="contact.html">
+                <form action="#customers">
                   <button type="submit" class="head-btn">CONTACT US</button>
                 </form>
               </div>
@@ -552,7 +552,7 @@
                     <div></div>
 
                     <div class = "customer">
-                      <form action="">
+                      <form id = "questionaire" action="">
                         <h3>Estimated Number of W2 Employees in 2021:</h3>
 
                         <input type="radio" id="u1" name="employees" value="Less than 5">
@@ -573,10 +573,11 @@
                         <input type="radio" id="u6" name="employees" value="500+ Employees">
                         <label for="u6">500+ Employees</label><br>
 
-
-                        <input id = "sub_bu" type="submit" value="Submit">
+                        <input id = "sub_bu" type="submit" value="Submit" onSubmit="questionaireSubmit(this.form);">
 
                       </form>
+
+                      <p id = 'questionaireOutput'></p>
                     </div>
 
                 </section>

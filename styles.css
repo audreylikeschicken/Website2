@@ -441,9 +441,11 @@ img{
     font-weight: 700;
     opacity: 0.7;
 }
+/*
 .customer:hover{
     transform: translateY(-18px);
 }
+*/
 @media(min-width: 992px){
     .customers-container{
         display: grid;

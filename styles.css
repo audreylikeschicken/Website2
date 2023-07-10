@@ -389,7 +389,7 @@ img{
 
 /* customers */
 
-.customers{
+/* .customers{
     margin-top: 0px;
     padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
@@ -451,7 +451,7 @@ img{
         width: 100px;
         height: 100px;
     }
-}
+} /*
 
 /* footer */
 .footer{
@@ -577,23 +577,22 @@ color: black;
 }
 
 .tbox {
-  font-size:12px;
+  font-size:19px;
   padding-left:2px;
   padding-right:2px;
 }
 
 #submit{
-  margin-top: 25px;
-  background-color:rgb(0,0,0,.5);
-  border:none;
-  color:white;
-  padding:3px;;
-  margin:10px;
-  text-decoration:none;
-  cursor:pointer;
-  font-size:24px;
-  width:480px;
-}
+    margin-top: 25px;
+    background-color:rgb(0,0,0,.5);
+    border:none;
+    color:white;
+    padding:3px;;
+    margin:10px;
+    cursor:pointer;
+    font-size:24px;
+    width:480px;
+  }
 
 /* Style the buttons that are used to open and close the accordion panel */
  .accordion {

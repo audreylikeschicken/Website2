@@ -50,9 +50,8 @@ var n = setInterval(function() {
   var days = Math.floor(dist / (1000 * 60 * 60 * 24));
   var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((dist % (1000 * 60)) / 1000);
 
-  document.getElementById('countdown').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  document.getElementById('countdown').innerHTML = days + "d " + hours + "h ";
 
   if (dist < 0) {
     clearInterval(n);

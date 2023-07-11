@@ -269,6 +269,7 @@ img{
     font-weight: 600;
     word-spacing: 5px;
     padding-bottom: 8px;
+
 }
 .book-form input:not(.btn){
     margin: 4px 0 16px 0;
@@ -415,6 +416,18 @@ img{
   border-radius:10px;
 }
 #sub_bu:hover {
+  background-color:rgb(200,200,200,0.3);
+  cursor:pointer;
+}
+#form_link{
+  background-color:rgb(200,200,200);
+  text-align:center;
+  height:50px;
+  width:150px;
+  border-radius:10px;
+  display:none;
+}
+#form_link:hover{
   background-color:rgb(200,200,200,0.3);
   cursor:pointer;
 }

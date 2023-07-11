@@ -65,6 +65,7 @@ function closeWindow() {
 
 //Questionaire
 const button = document.querySelector('#sub_bu');
+const form = document.getElementById('form_link');
 const out = document.getElementById('queryOut');
 const query = document.querySelectorAll('input[name ="employees"]');
 button.addEventListener('click', () => {
@@ -77,10 +78,12 @@ button.addEventListener('click', () => {
   }
   if (n == "u1" || n == "u6") {
     out.innerHTML = "Sorry, your business does not qualify for the ERC program.";
+    form.style.display="none";
   }
   else {
     if (n == "u2" || n == "u3" || n == "u4" || n == "u5") {
       out.innerHTML = "Congratulations, your business may be qualified for the ERC program. Please fill out the form below to get in contact with us!";
+      form.style.display="initial";
     }
   }
 });

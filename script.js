@@ -63,15 +63,33 @@ function closeWindow() {
   close();
 }
 
+
 //Questionaire
-const button = document.querySelector('#sub_bu');
 const form = document.getElementById('form_link');
 const out = document.getElementById('queryOut');
+
+const button0 = document.getElementById('startQuestionaire');
+const radios0 = document.getElementById('questionaire0');
+
 const query = document.querySelectorAll('input[name ="employees"]');
-const title = document.getElementById('questionaire_title');
-const radios = document.getElementById('questionaire');
-const subB = document.getElementById('sub_bu');
-button.addEventListener('click', () => {
+const title1 = document.getElementById('questionaire_title1');
+const radios1 = document.getElementById('questionaire1');
+const button1 = document.querySelector('#sub_bu1');
+const subB1 = document.getElementById('sub_bu1');
+
+
+//Questionaire 0
+button0.addEventListener('click', () => {
+  radios0.style.display="none";
+  button0.style.display="none";
+
+  title1.style.display="initial";
+  radios1.style.display="initial";
+  subB1.style.display="initial";
+});
+
+//Questionaire 1
+button1.addEventListener('click', () => {
   let n;
   for (const quer of query) {
     if (quer.checked) {
@@ -83,9 +101,9 @@ button.addEventListener('click', () => {
     out.innerHTML = "Sorry, your business does not qualify for the ERC program.";
     form.style.display="none";
 
-    title.style.display="none";
-    radios.style.display="none";
-    subB.style.display="none";
+    title1.style.display="none";
+    radios1.style.display="none";
+    subB1.style.display="none";
 
   }
   else {
@@ -93,9 +111,9 @@ button.addEventListener('click', () => {
       out.innerHTML = "Congratulations, your business may be qualified for the ERC program. Please fill out the form below to book an appointment with one of our ERC specialists.";
       form.style.display="initial";
 
-      title.style.display="none";
-      radios.style.display="none";
-      subB.style.display="none";
+      title1.style.display="none";
+      radios1.style.display="none";
+      subB1.style.display="none";
     }
   }
 });

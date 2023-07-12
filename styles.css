@@ -408,26 +408,14 @@ img{
 .customer form input[type="radio"]:hover {
   cursor:pointer;
 }
-#sub_bu {
+.formButton{
   background-color:rgb(200,200,200);
   text-align:center;
   height:50px;
   width:150px;
   border-radius:10px;
 }
-#sub_bu:hover {
-  background-color:rgb(200,200,200,0.3);
-  cursor:pointer;
-}
-#form_link{
-  background-color:rgb(200,200,200);
-  text-align:center;
-  height:50px;
-  width:150px;
-  border-radius:10px;
-  display:none;
-}
-#form_link:hover{
+.formButton:hover{
   background-color:rgb(200,200,200,0.3);
   cursor:pointer;
 }
@@ -655,3 +643,20 @@ color: black;
   .site-name {
     font-size:18px;
   }
+
+/* Questionaire things */
+#form_link{
+  display:none;
+}
+#questionaire0{
+  text-align:none;
+}
+#questionaire1{
+  display:none;
+}
+#questionaire_title1{
+  display:none;
+}
+#sub_bu1 {
+  display:none;
+}

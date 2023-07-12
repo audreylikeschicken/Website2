@@ -98,7 +98,7 @@ button1.addEventListener('click', () => {
     }
   }
   if (n == "u1" || n == "u6") {
-    out.innerHTML = "Sorry, your business does not qualify for the ERC program.";
+    out.innerHTML = "Sorry, your business does not meet our requirements to file for the ERC.";
     form.style.display="none";
 
     title1.style.display="none";

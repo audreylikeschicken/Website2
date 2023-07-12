@@ -108,7 +108,7 @@ button1.addEventListener('click', () => {
   }
   else {
     if (n == "u2" || n == "u3" || n == "u4" || n == "u5") {
-      out.innerHTML = "Congratulations, your business may be qualified for the ERC program. Please fill out the form below to book an appointment with one of our ERC specialists.";
+      out.innerHTML = "Congratulations, your business may be qualified for the ERC program! Please fill out the form below to book an appointment with one of our ERC experts.";
       form.style.display="initial";
 
       title1.style.display="none";

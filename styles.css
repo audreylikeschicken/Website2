@@ -2,8 +2,8 @@
 
 :root{
     --transition: all 0.7s ease;
-    --yellow: #f9d342;
-    --dark: #292826;
+    --yellow: #003064;
+    --dark: #000000;
 }
 *{
     box-sizing: border-box;
@@ -120,6 +120,7 @@ img{
     }
 }
 
+
 /* side nav */
 .sidenav{
     background: var(--dark);
@@ -131,6 +132,7 @@ img{
     width: 300px;
     padding: 20px;
     transition: var(--transition);
+    transition: 0.25s;
     z-index: 10;
 }
 
@@ -165,6 +167,7 @@ img{
     letter-spacing: 1.5px;
     transition: var(--transition);
 }
+
 .navbar li a:hover{
     padding-left: 12px;
 }

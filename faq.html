@@ -20,8 +20,23 @@
                     .site-name {
                         position: fixed;
                         top: -10;
-                        background-color: #05ff8690;
+                        background-color: black;
                         z-index: 100;
+                        border-top-left-radius:30px;
+                        border-bottom-left-radius:30px;
+                        border-top-right-radius:30px;
+                        border-bottom-right-radius:30px;
+                        box-shadow: 0 0 10px #003064,
+                                    0 0 20px #003064,
+                                    0 0 40px #003064,
+                                    0 0 80px #003064,
+                                    0 0 100px #003064;
+                        transition: 0.25s;
+                        
+                    }
+                
+                    .site-nav:hover::before{
+                        width: 100;
                     }
                 </style>
                 <span id = "countdown"></span>
@@ -30,12 +45,27 @@
                 <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
                 <style>
                     .site-nav {
-                        position: fixed;
-                        top: -10;
-                        right: 25px;
-                        background-color: #05ff8690;
-                        z-index: 100;
+                       position: fixed;
+                       top: -10;
+                       right: 25px;
+                       background-color: black;
+                       z-index: 100;
+                       border-top-left-radius:30px;
+                        border-bottom-left-radius:30px;
+                        border-top-right-radius:30px;
+                        border-bottom-right-radius:30px;
+                        box-shadow: 0 0 10px #003064,
+                                    0 0 20px #003064,
+                                    0 0 40px #003064,
+                                    0 0 80px #003064,
+                                    0 0 100px #003064;
+                        transition: 0.25s;
+                        
                     }
+                    .site-nav:hover::before{
+                        width: 100;
+                    }
+                    
 
                 </style>
             </div>

@@ -73,7 +73,7 @@ img{
     transition: var(--transition);
 }
 .head-top span:hover{
-    color: var(--yellow);
+    color: rgb(91, 255, 66);
 }
 .head-bottom{
     flex: 1;

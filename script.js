@@ -67,12 +67,12 @@ function closeWindow() {
 //Questionaire
 const form = document.getElementById('form_link');
 const out = document.getElementById('queryOut');
+const title = document.getElementById('questionaire_title');
 
 const button0 = document.getElementById('startQuestionaire');
 const radios0 = document.getElementById('questionaire0');
 
 const query = document.querySelectorAll('input[name ="employees"]');
-const title1 = document.getElementById('questionaire_title1');
 const radios1 = document.getElementById('questionaire1');
 const button1 = document.querySelector('#sub_bu1');
 const subB1 = document.getElementById('sub_bu1');
@@ -83,7 +83,7 @@ button0.addEventListener('click', () => {
   radios0.style.display="none";
   button0.style.display="none";
 
-  title1.style.display="initial";
+  title.style.display="initial";
   radios1.style.display="initial";
   subB1.style.display="initial";
 });
@@ -101,7 +101,7 @@ button1.addEventListener('click', () => {
     out.innerHTML = "Sorry, your business does not meet our requirements to file for the ERC.";
     form.style.display="none";
 
-    title1.style.display="none";
+    title.style.display="none";
     radios1.style.display="none";
     subB1.style.display="none";
 
@@ -111,7 +111,7 @@ button1.addEventListener('click', () => {
       out.innerHTML = "Congratulations, your business may be qualified for the ERC program! Please fill out the form below to book an appointment with one of our ERC experts.";
       form.style.display="initial";
 
-      title1.style.display="none";
+      title.style.display="none";
       radios1.style.display="none";
       subB1.style.display="none";
     }

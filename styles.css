@@ -73,7 +73,7 @@ img{
     transition: var(--transition);
 }
 .head-top span:hover{
-    color: rgb(91, 255, 66);
+    color: rgb(141, 184, 252);
 }
 .head-bottom{
     flex: 1;
@@ -324,6 +324,12 @@ img{
     background: var(--dark);
     color: #fff;
 }
+#Whoweare2{
+  margin:0px;
+  padding-bottom: 25px;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img3.jpg") center/cover no-repeat fixed;
+}
 .Whoweare-text{
     padding: 5px 20px;
 }
@@ -392,6 +398,10 @@ img{
 }
 
 /* customers */
+
+#questionaireTitle{
+  color:white;
+}
 
  .customers{
     margin-top: 0px;
@@ -657,7 +667,7 @@ color: black;
 #questionaire1{
   display:none;
 }
-#questionaire_title1{
+#questionaire_title{
   display:none;
 }
 #sub_bu1 {

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="zg-html">
+
+<head>
+  <meta charset="utf-8">
+  <title>EMPLOYEE RETENTON CREDIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i|Noto+Serif" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <script nonce="undefined" src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+  <link rel = "icon" href = "images/logo.png" type = "image/png">
+
+  <style>
+    .zg-body {
+      background: #e6e6e6;
+      padding: 50px 0;
+      font-family: 'Noto Serif', serif;
+    }
+
+    zing-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-family: 'Noto Serif', serif;
+      --theme-color-primary: #383838;
+      background: none ; 
+      color: #414141;
+      border: none;
+      opacity: 1;
+      --zg-pager-font-size: 11px;
+      --zg-row-body-background_hover: #f4fbff;
+      --zg-row-color_hover: #383838;
+    }
+
+    zing-grid.loading {
+      opacity: 0;
+      transition: opacity .3s ease-out;
+    }
+
+    zg-caption {
+      background: none;
+      color: #414141;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    zg-body {
+      background: none;
+      color: #414141;
+      
+    }
+
+    zg-row {
+      background: #ffffff;
+    }
+
+    [viewport="mobile"] zg-body[layout="card"] {
+      --zg-card-columns: 100%;
+    }
+
+    zg-row[layout="card"] {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    }
+
+    zg-body[layout="card"] {
+      --zg-card-columns: 33%;
+    }
+
+    .zg-body [data-field-index="author"] {
+      align-items: center;
+      justify-content: center;
+      font-family: 'Muli', sans-serif;
+    }
+
+    zg-cell:nth-child(1) {
+      font-size: 17px;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    zg-cell:nth-child(2) {
+      font-size: 12px;
+      line-height: 1.3;
+      color: #a8a8a8;
+    }
+
+    zg-row[layout="row"] zg-cell:nth-child(1) {
+      text-align: left;
+    }
+
+    zg-watermark {
+      background: none;
+      border: none;
+      font-family: 'Muli', sans-serif;
+      justify-content: center;
+      font-size: 11px;
+      margin-top: 10px;
+    }
+
+    zg-footer {
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .zg-body .accordion-flex-layout {
+      --zg-cell-vertical-align: top;
+    }
+
+    /* target accordion for mobile and display as column*/
+    .zg-body zing-grid[viewport="mobile"] .accordion-container {
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    /* Main accordion styling */
+    .zg-body .accordion input {
+      display: none;
+    }
+
+    .zg-body .accordion label {
+      position: relative;
+      display: block;
+      background: #f7f7f7;
+      border-radius: .25em;
+      cursor: pointer;
+      margin-bottom: .125em;
+      padding: .75rem 1em;
+      z-index: 20;
+      border: 1px solid #cccccc;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .zg-body .accordion label:hover {
+      background: #ccc;
+    }
+
+    .zg-body .accordion input:checked+label {
+      background: #dddddd;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      color: #383838;
+      margin-bottom: -1px;
+    }
+
+    .zg-body .accordion label::after {
+      content: '+';
+      position: absolute;
+      right: 5px;
+    }
+
+    .zg-body .accordion input:checked+label::after {
+      content: '-';
+      position: absolute;
+      right: 5px;
+    }
+
+    .zg-body .accordion article {
+      background: #f9f9f9;
+      /* 
+	 * max-height allows height transition in CSS 
+	 * use height: 0px; otherwise
+	 */
+      max-height: 0px;
+      overflow: hidden;
+      z-index: 10;
+      opacity: 0;
+      /* allow closing transition */
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+      border: 1px solid #cccccc;
+      color: #383838;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .zg-body .accordion article {
+      padding: 1em;
+      cursor: default;
+    }
+
+    .zg-body .accordion input:checked~article {
+      border-bottom-left-radius: .25em;
+      border-bottom-right-radius: .25em;
+      /* 
+	 * max-height allows height transition in CSS 
+	 * use height: auto; otherwise
+	 */
+      max-height: 500px;
+      margin-bottom: .125em;
+      opacity: 1;
+      /* allow opening transition */
+      -webkit-transition: all 1s ease;
+      /* Safari */
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    zing-grid[loading] {
+      height: 996px;
+    }
+  </style>
+</head>
+ <!-- header -->
+ <header class = "header" id = "header">
+  <div class = "head-top">
+      <div class = "site-name" onclick="window.location.href='#header'">
+          <span>The Employee Retention Credit - Time Left to Apply:  </span>
+          <style>
+              .site-name {
+                  position: fixed;
+                  top: -10;
+                  background-color: black;
+                  z-index: 100;
+                  border-top-left-radius:30px;
+                  border-bottom-left-radius:30px;
+                  border-top-right-radius:30px;
+                  border-bottom-right-radius:30px;
+                  box-shadow: 0 0 10px #003064,
+                              0 0 20px #003064,
+                              0 0 40px #003064,
+                              0 0 80px #003064,
+                              0 0 100px #003064;
+                  transition: 0.25s;
+                  
+              }
+          
+              .site-nav:hover::before{
+                  width: 100;
+              }
+          </style>
+          <span id = "countdown"></span>
+      </div>
+      <div class = "site-nav">
+          <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+          <style>
+              .site-nav {
+                 position: fixed;
+                 top: -10;
+                 right: 25px;
+                 background-color: black;
+                 z-index: 100;
+                 border-top-left-radius:30px;
+                  border-bottom-left-radius:30px;
+                  border-top-right-radius:30px;
+                  border-bottom-right-radius:30px;
+                  box-shadow: 0 0 10px #003064,
+                              0 0 20px #003064,
+                              0 0 40px #003064,
+                              0 0 80px #003064,
+                              0 0 100px #003064;
+                  transition: 0.25s;
+                  
+              }
+              .site-nav:hover::before{
+                  width: 100;
+              }
+              
+
+          </style>
+      </div>
+  </div>
+
+  <div class="head-bottom flex">
+      <h2>Frequently Asked Questions</h2>
+      <style>
+          .marquee {
+              white-space: nowrap;
+              overflow: hidden;
+              animation: marquee 20s linear infinite;
+          }
+
+          @keyframes marquee {
+              0% { transform: translateX(100%); }
+              100% { transform: translateX(-120%); }
+          }
+      </style>
+      <!-- <p id = "twosix"><em><b><ins>Receive up to $26,000 per Employee</ins></b></em></p> -->
+      <form action="doc.html">
+        <button type="submit" class="head-btn">Back to Home Page</button>
+      </form>
+    </div>
+</header>
+<!-- end of header -->
+
+<!-- side navbar -->
+<div class = "sidenav" id = "sidenav">
+  <span class = "cancel-btn" id = "cancel-btn">
+      <i class = "fas fa-times"></i>
+  </span>
+
+  <ul class = "navbar">
+      <li><a href = "doc.html#header">home</a></li>
+      <li><a href = "doc.html#services">services</a></li>
+      <li><a href = "#Whoweare">Who We Are</a></li>
+      <li><a href = "faq.html">FAQ</a></li>
+      <li><a href = "doc.html#customers">Questionaire</a></li>
+  </ul>
+
+</div>
+  <!-- end of side navbar -->
+
+  <!-- fullscreen modal -->
+  <div id = "modal"></div>
+  <!-- end of fullscreen modal -->
+
+<body class="zg-body">
+  <zing-grid 
+  layout="card" 
+  layout-controls="disabled" 
+  pager page-size="6" 
+  page-size-options="3,6,9,12" 
+  class="loading"
+  data='[{
+    "quote": "Can I apply for ERC if Im self employed?",
+    "bio": "No. Only W-2 employee wages can be claimed, and  cannot claim your own wages as a majority owner even if you are on a W-2 wage."
+  },
+  {
+    "quote": "Can I apply for ERC if I have 1099 employees?",
+    "bio": "No. Only W-2 employee wages can be claimed for the credit."
+  },
+  {
+    "quote": "Can I apply for ERC if I have family on payroll?",
+    "bio": "Yes! You can apply for ERC, but you may not claim ERC on wages paid to family members of majority owners. This includes immediate family plus in-laws, aunts, uncles, and cousins."
+  },
+  {
+    "quote": "Can I get ERC if my business revenue went up?",
+    "bio": "Yes! Your business will be able to qualify for ERC if you had a full or partial suspension of operations."
+  },
+  {
+    "quote": "What are qualified wages for ERC?",
+    "bio": "The Employee Retention Credit (ERC) uses qualified wages as the basis for its calculation, which covers any wages paid that are subject to FICA taxes. These qualified wages can include various types of compensation, such as salaries, hourly wages, vacation pay, and certain health plan expenses, among others."
+  },
+  {
+    "quote": "What period does the program cover?",
+    "bio": "The program began on March 13th, 2020 and ends on September 30, 2021, for eligible employers. You can apply for refunds for 2020 and 2021 after December 31st of this year, into 2022 and 2023. And potentially beyond then too. We have clients who received refunds only, and others that, in addition to refunds, also qualified to continue receiving ERC in every payroll they process through December 31, 2021, at about 30% of their payroll cost. We have clients who have received refunds from $100,000 to $6 million."
+  }
+]'>
+    <zg-colgroup>
+      <zg-column index="quote" header="&nbsp;">
+      [[index.quote]]
+      </zg-column>
+      <zg-column renderer="_bindAccordion" cell-class="accordion-flex-layout" index="author, bio" header="&nbsp;">
+        <template>
+          <section class="accordion">
+            <input type="checkbox" id="changeme">
+            <label for="changeme">See</label>
+            <article>
+              <p class="authorBio">[[index.bio]]</p>
+            </article>
+          </section>
+        </template>
+      </zg-column>
+    </zg-colgroup>
+    <zg-footer>
+      <p>Biography sources: <a href="https://www.wikipedia.org/" target="_blank" crossorigin>Wikipedia</a>
+    </zg-footer>
+  </zing-grid>
+  <script>
+    // global event handler for expanding dropdowns
+    const expandHandler = function() {
+      this.classList.toggle('active');
+      this.nextElementSibling.classList.toggle('show');
+    }
+
+    // generate randomId for dropdownsreturn Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+    const randomId = () => {
+      return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+    }
+
+    // custom render function for coach info accordion
+    function _bindAccordion(name, bio, cellRef, $cell) {
+      // grab template contents
+      const $input = cellRef.querySelector('input');
+      const $label = cellRef.querySelector('label');
+
+      // assign template attributes and custom id's
+      // so the label for will trigger the dropdown
+      const dropdownID = randomId();
+      $input.setAttribute('id', `accordion_${dropdownID}`);
+      $label.setAttribute('for', `accordion_${dropdownID}`);
+    };
+
+
+    // Custom loading class for CSS handling
+    const zgLoaded = document.querySelector('zing-grid');
+    zgLoaded.addEventListener('grid:ready', () => {
+      setTimeout(() => zgLoaded.classList.remove('loading'), 0);
+    });
+  </script>
+</body>
+
+</html>

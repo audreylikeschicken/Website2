@@ -319,7 +319,8 @@
   <zing-grid 
   layout="card" 
   layout-controls="disabled" 
-  pager page-size="6" 
+  pager
+  page-size="6" 
   page-size-options="3,6,9,12" 
   class="loading"
   data='[{
@@ -355,7 +356,7 @@
         <template>
           <section class="accordion">
             <input type="checkbox" id="changeme">
-            <label for="changeme">See</label>
+            <label for="changeme">See More</label>
             <article>
               <p class="authorBio">[[index.bio]]</p>
             </article>
@@ -363,42 +364,71 @@
         </template>
       </zg-column>
     </zg-colgroup>
-    <zg-footer>
-      <p>Biography sources: <a href="https://www.wikipedia.org/" target="_blank" crossorigin>Wikipedia</a>
-    </zg-footer>
   </zing-grid>
-  <script>
-    // global event handler for expanding dropdowns
-    const expandHandler = function() {
-      this.classList.toggle('active');
-      this.nextElementSibling.classList.toggle('show');
-    }
+  <footer class = "footer">
+    <div class = "footer-container">
+        <div>
+            <h2>About Us </h2>
+            <p>Website</p>
+            <ul class = "social-icons">
+                <li class = "flex">
+                    <i class = "fa fa-twitter fa-2x"></i>
+                </li>
+                <li class = "flex">
+                    <i class = "fa fa-facebook fa-2x"></i>
+                </li>
+                <li class = "flex">
+                    <i class = "fa fa-instagram fa-2x"></i>
+                </li>
+            </ul>
+        </div>
 
-    // generate randomId for dropdownsreturn Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
-    const randomId = () => {
-      return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
-    }
+        <div>
+            <h2>Useful Links</h2>
+            <a href = "#">Blog</a>
+            <a href = "#">Who We Are</a>
+        </div>
 
-    // custom render function for coach info accordion
-    function _bindAccordion(name, bio, cellRef, $cell) {
-      // grab template contents
-      const $input = cellRef.querySelector('input');
-      const $label = cellRef.querySelector('label');
+        <div>
+            <h2>Privacy</h2>
+            <a href = "#">Career</a>
+            <a href = "#">About Us</a>
+            <a href = "#">Contact Us</a>
+            <a href = "#">Services</a>
+        </div>
 
-      // assign template attributes and custom id's
-      // so the label for will trigger the dropdown
-      const dropdownID = randomId();
-      $input.setAttribute('id', `accordion_${dropdownID}`);
-      $label.setAttribute('for', `accordion_${dropdownID}`);
-    };
+        <div>
+            <h2>Have A Question</h2>
+            <div class = "contact-item">
+                <span>
+                    <i class = "fas fa-map-marker-alt"></i>
+                </span>
+                <span>
+                    Brooklyn, NY
+                </span>
+            </div>
+            <div class = "contact-item">
+                <span>
+                    <i class = "fas fa-phone-alt"></i>
+                </span>
+                <span>
+                    +347-798-7469
+                </span>
+            </div>
+            <div class = "contact-item">
+                <span>
+                    <i class = "fas fa-envelope"></i>
+                </span>
+                <span>
+                    website@domain.com
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
-    // Custom loading class for CSS handling
-    const zgLoaded = document.querySelector('zing-grid');
-    zgLoaded.addEventListener('grid:ready', () => {
-      setTimeout(() => zgLoaded.classList.remove('loading'), 0);
-    });
-  </script>
+<script src="script.js"></script>
 </body>
 
 </html>

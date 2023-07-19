@@ -585,24 +585,10 @@ color: black;
   padding:10px;
 }
 
-.wrapper > div {
+.wrapper div {
   text-align: center;
   padding: 20px 0;
   font-size: 23px;
-}
-
-.form{
-  background-color:rgba(82,173,235,0.3);
-  margin-top: -60px;
-  margin-left:60px;
-  margin-right:60px;
-  margin-bottom:40px;
-  padding:10px;
-}
-
-.labels{
-  font-size:18px;
-  color:white;
 }
 
 #comment{
@@ -635,6 +621,10 @@ color: black;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
+.faq{
+
+}
+
  .accordion {
     background-color: #eee;
     color: #444;
@@ -644,8 +634,11 @@ color: black;
     text-align: left;
     outline: none;
     transition: 0.4s;
-    font-size:24px;
+    font-size:36px;
     border:none;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -653,22 +646,67 @@ color: black;
     background-color: #ccc;
   }
 
-    .panel {
+  .panel {
     padding: 0 18px;
     background-color: #ccc;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size:20px;
+    font-size:28px;
     color: #444;
     font-weight:bold;
+    border-left:1px solid black;
+    border-right:1px solid black;;
+    width:100%;
   }
 
   .site-name {
     font-size:18px;
   }
 
-/* Questionaire things */
+/* Questionaire/Contact Us Things*/
+.one{
+  font-size: 36px;
+  font-weight: bold;
+  border: 3px solid #fff;
+  background: transparent;
+  padding: 13px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin:8px;
+}
+
+#contactHead{
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #fff;
+  background: transparent;
+  padding: 13px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#contactHead:hover{
+  background:transparent;
+}
+
+.form{
+  background-color:rgba(82,173,235,0.8);
+  margin-top: -60px;
+  margin-left:60px;
+  margin-right:60px;
+  margin-bottom:40px;
+  padding:10px;
+  border:groove;
+}
+
+.labels{
+  font-size:24px;
+  color:white;
+}
+
 #form_link{
   display:none;
 }

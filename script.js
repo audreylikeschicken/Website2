@@ -24,6 +24,7 @@ window.addEventListener('click', function(event){
 
 });
 
+
 for(i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
@@ -40,6 +41,7 @@ for(i = 0; i < acc.length; i++) {
         }
 });
 }
+
 
 //timer stuff
 var targetDate = new Date("April 15,2024 00:00:00").getTime();

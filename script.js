@@ -117,13 +117,3 @@ button1.addEventListener('click', () => {
     }
   }
 });
-
-const accordionItems = document.querySelectorAll(".accordion-item");
-
-accordionItems.forEach(accordionItem => {
-  const accordionItemHeader = accordionItem.querySelector(".accordion-item-header");
-
-  accordionItemHeader.addEventListener("click", () => {
-    accordionItem.classList.toggle("active");
-  });
-});

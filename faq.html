@@ -451,7 +451,7 @@
             </div>
         </div>
     </div>
-
+    
 <!--End of FAQ-->
 
 
@@ -517,15 +517,24 @@
             </div>
         </footer>
 
-        const accordionItems = document.querySelectorAll(".accordion-item");
 
-accordionItems.forEach(accordionItem => {
-  const accordionItemHeader = accordionItem.querySelector(".accordion-item-header");
+        <script>
+            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-  accordionItemHeader.addEventListener("click", () => {
-    accordionItem.classList.toggle("active");
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+
   });
 });
-
+        </script>
     </body>
 </html>

@@ -640,12 +640,12 @@ color: black;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 90%;
-    text-align: center;
-    border: none;
+    width: 100%;
+    text-align: left;
     outline: none;
     transition: 0.4s;
     font-size:24px;
+    border:none;
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

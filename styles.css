@@ -72,6 +72,7 @@ img{
     cursor: pointer;
     letter-spacing: 2px;
     transition: var(--transition);
+    font-size:20px;
 }
 .head-top span:hover{
     color: rgb(141, 184, 252);
@@ -331,11 +332,15 @@ img{
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img3.jpg") center/cover no-repeat fixed;
 }
+#Whoweare2 li{
+  font-size:24px;
+}
 .Whoweare-text{
     padding: 5px 20px;
+    font-size:19px;
 }
 .Whoweare-text h3{
-    font-size: 24px;
+    font-size: 32px;
 }
 .Whoweare-text ul{
     list-style-type: none;
@@ -587,7 +592,7 @@ color: black;
 }
 
 .form{
-  background-color:rgba(105, 105, 105, 0.6);
+  background-color:rgba(82,173,235,0.3);
   margin-top: -60px;
   margin-left:60px;
   margin-right:60px;
@@ -622,7 +627,12 @@ color: black;
     cursor:pointer;
     font-size:24px;
     width:480px;
+    transition: 0.4s;
   }
+#submit:hover{
+  background-color:rgb(0,0,0,3);
+  transition: 0.4s;
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
  .accordion {

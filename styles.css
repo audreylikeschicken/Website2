@@ -2,8 +2,8 @@
 
 :root{
     --transition: all 0.7s ease;
-    --yellow: #f9d342;
-    --dark: #292826;
+    --yellow: #003064;
+    --dark: #000000;
 }
 *{
     box-sizing: border-box;
@@ -16,6 +16,7 @@ html{
 }
 body{
     line-height: 1.6;
+    overflow-x: hidden;
 }
 .btn{
     font-size: 16px;
@@ -71,9 +72,10 @@ img{
     cursor: pointer;
     letter-spacing: 2px;
     transition: var(--transition);
+    font-size:20px;
 }
 .head-top span:hover{
-    color: var(--yellow);
+    color: rgb(141, 184, 252);
 }
 .head-bottom{
     flex: 1;
@@ -120,6 +122,7 @@ img{
     }
 }
 
+
 /* side nav */
 .sidenav{
     background: var(--dark);
@@ -131,6 +134,7 @@ img{
     width: 300px;
     padding: 20px;
     transition: var(--transition);
+    transition: 0.25s;
     z-index: 10;
 }
 
@@ -165,6 +169,7 @@ img{
     letter-spacing: 1.5px;
     transition: var(--transition);
 }
+
 .navbar li a:hover{
     padding-left: 12px;
 }
@@ -187,16 +192,22 @@ img{
     border-bottom: 5px solid var(--dark);
     width: 235px;
     margin: 15px 0;
+    padding-left: 10px;
+}
+
+#twosix{
+  font-size:32px;
+  color:rgb(255,255,255);
 }
 
 .sec-width{
-    width: 85vw;
+    width: auto;
     margin: 0 auto!important;
 }
 
 /* service */
 .services{
-    margin: 40px 0;
+    margin:40px 0;
 }
 .service{
     display: flex;
@@ -223,7 +234,7 @@ img{
 @media(min-width: 992px){
     .services-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
     }
     .title h2{
@@ -263,6 +274,7 @@ img{
     font-weight: 600;
     word-spacing: 5px;
     padding-bottom: 8px;
+
 }
 .book-form input:not(.btn){
     margin: 4px 0 16px 0;
@@ -307,17 +319,28 @@ img{
 .Whoweare{
     margin: 40px 0;
 }
+
 .Whoweare{
     margin: 45px 0;
     padding-bottom: 25px;
     background: var(--dark);
     color: #fff;
 }
+#Whoweare2{
+  margin:0px;
+  padding-bottom: 25px;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img3.jpg") center/cover no-repeat fixed;
+}
+#Whoweare2 li{
+  font-size:24px;
+}
 .Whoweare-text{
     padding: 5px 20px;
+    font-size:19px;
 }
 .Whoweare-text h3{
-    font-size: 24px;
+    font-size: 32px;
 }
 .Whoweare-text ul{
     list-style-type: none;
@@ -382,19 +405,38 @@ img{
 
 /* customers */
 
-.customers{
-    margin-top: 40px;
-    padding: 40px 0;
+#questionaireTitle{
+  color:white;
+}
+
+ .customers{
+    margin-top: 0px;
+    padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/customer-banner.jpg") center/cover no-repeat fixed;
 }
 .customer{
-    background: #fff;
+    background: rgb(255,255,255,0.8);
+    border-style:none;
     padding: 35px;
-    text-align: center;
+    text-align: left;
     margin: 24px 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    transition: var(--transition);
+    height:500px;
+    font-size:18px;
+}
+.customer form input[type="radio"]:hover {
+  cursor:pointer;
+}
+.formButton{
+  background-color:rgb(200,200,200);
+  text-align:center;
+  height:50px;
+  width:150px;
+  border-radius:10px;
+}
+.formButton:hover{
+  background-color:rgb(200,200,200,0.3);
+  cursor:pointer;
 }
 .rating{
     margin: 10px 0;
@@ -406,7 +448,6 @@ img{
 .customer p{
     opacity: 0.7;
     line-height: 1.8;
-    width: 60%;
     margin: 0 auto;
 }
 .customer img{
@@ -419,9 +460,11 @@ img{
     font-weight: 700;
     opacity: 0.7;
 }
+/*
 .customer:hover{
     transform: translateY(-18px);
 }
+*/
 @media(min-width: 992px){
     .customers-container{
         display: grid;
@@ -519,4 +562,125 @@ img{
     bottom: 0;
     left: 0;
     z-index: 5;
+}
+
+/* CONTACT PAGE */
+#bg2{
+  background-image:url(./images/contactbg.jpg);
+  background-size:cover;
+  font-size: 12px;
+  text-decoration: none;
+color: black;
+
+}
+
+#topbar{
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  padding:10px;
+}
+
+.wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 23px;
+}
+
+.form{
+  background-color:rgba(82,173,235,0.3);
+  margin-top: -60px;
+  margin-left:60px;
+  margin-right:60px;
+  margin-bottom:40px;
+  padding:10px;
+}
+
+.labels{
+  font-size:18px;
+  color:white;
+}
+
+#comment{
+  height:150px;
+  width:500px;
+  resize:none;
+}
+
+.tbox {
+  font-size:19px;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+#submit{
+    margin-top: 25px;
+    background-color:rgb(0,0,0,.5);
+    border:none;
+    color:white;
+    padding:3px;;
+    margin:10px;
+    cursor:pointer;
+    font-size:24px;
+    width:480px;
+    transition: 0.4s;
+  }
+#submit:hover{
+  background-color:rgb(0,0,0,3);
+  transition: 0.4s;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size:24px;
+    border:none;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+    .panel {
+    padding: 0 18px;
+    background-color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size:20px;
+    color: #444;
+    font-weight:bold;
+  }
+
+  .site-name {
+    font-size:18px;
+  }
+
+/* Questionaire things */
+#form_link{
+  display:none;
+}
+#questionaire0{
+  text-align:none;
+}
+#questionaire1{
+  display:none;
+}
+#questionaire_title{
+  display:none;
+}
+#sub_bu1 {
+  display:none;
 }

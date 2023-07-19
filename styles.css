@@ -16,6 +16,7 @@ html{
 }
 body{
     line-height: 1.6;
+    overflow-x: hidden;
 }
 .btn{
     font-size: 16px;
@@ -623,38 +624,54 @@ color: black;
     width:480px;
   }
 
-/* Style the buttons that are used to open and close the accordion panel */
- .accordion {
-    background-color: #eee;
-    color: #444;
+/* accordion css*/
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-size:24px;
   }
-
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
+  .accordion-item-header::after {
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
   }
-
-    .panel {
-    padding: 0 18px;
-    background-color: #ccc;
+  .accordion-item-header.active::after {
+    content: "-";
+  }
+  .accordion-item-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size:20px;
-    color: #444;
-    font-weight:bold;
   }
-
-  .site-name {
-    font-size:18px;
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
   }
 
 /* Questionaire things */
@@ -672,57 +689,4 @@ color: black;
 }
 #sub_bu1 {
   display:none;
-}
-
-.accordion {
-    margin: 60px auto;
-    width: 600px;
-}
-
-.accordion li {
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: #d1d1d1;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.accordion li label {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.accordion li .content {
-    color: #000000;
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="radio"]:checked + label + .content {
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.accordion input[type="radio"]:checked + label::before {
-    content: '-';
 }
